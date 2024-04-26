@@ -5,7 +5,7 @@ using UnityEngine;
 public class TileManager : MonoBehaviour
 {
     public List<GameObject> tilePrefabs;
-    public float spawnInterval = 1.0f;
+    public float spawnInterval = 2f;
     public float moveSpeed = 2.0f;
     public float despawnThreshold = -10.0f;
 
