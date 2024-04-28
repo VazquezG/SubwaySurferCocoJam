@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 932963183916593514, guid: c03e1e2390a65074ab1355c0c234f5e8, type: 3}
   - {fileID: 3439490979910589957, guid: ee544acb28e177e4fb9640da8a6a8401, type: 3}
   - {fileID: 8396589274177780355, guid: c88dfe63e0b3d0b49891242e8926d330, type: 3}
-  spawnInterval: 1
+  spawnInterval: 2
   moveSpeed: 7
   despawnThreshold: -15
 --- !u!4 &955744907
@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 20825001036121875, guid: 8993131c6b3d74c46876ac1238e04fea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8525154084459191751, guid: 8993131c6b3d74c46876ac1238e04fea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -377,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3439490979910589957, guid: ee544acb28e177e4fb9640da8a6a8401, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -433,6 +441,10 @@ PrefabInstance:
     - target: {fileID: 932963183916593514, guid: c03e1e2390a65074ab1355c0c234f5e8, type: 3}
       propertyPath: m_Name
       value: Square (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 932963183916593514, guid: c03e1e2390a65074ab1355c0c234f5e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -491,6 +503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8396589274177780355, guid: c88dfe63e0b3d0b49891242e8926d330, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -547,6 +563,10 @@ PrefabInstance:
     - target: {fileID: 5497354763981023318, guid: 49fb4402ce3ca4c4ea4c4f701029e4e5, type: 3}
       propertyPath: m_Name
       value: Square (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497354763981023318, guid: 49fb4402ce3ca4c4ea4c4f701029e4e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

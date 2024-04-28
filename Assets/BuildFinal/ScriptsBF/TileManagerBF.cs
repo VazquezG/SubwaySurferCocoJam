@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileManager : MonoBehaviour
+public class TileManagerBF : MonoBehaviour
 {
     public List<GameObject> tilePrefabs;
     public float spawnInterval = 2f;
     public float moveSpeed = 2.0f;
-    public float despawnThreshold = -10.0f;
+    public float despawnThreshold = -15.0f;
 
     private float nextSpawnTime;
     private List<GameObject> activeTiles = new List<GameObject>();
@@ -39,7 +39,7 @@ public class TileManager : MonoBehaviour
         if (activeTiles.Count > 0)
         {
             float previousTileY = activeTiles[activeTiles.Count - 1].transform.position.y;
-            newTile.transform.position = new Vector3(transform.position.x, previousTileY + newTile.GetComponent<SpriteRenderer>().bounds.size.y, transform.position.z);
+            newTile.transform.position = new Vector3(transform.position.x, transform.position.y /*previousTileY + newTile.GetComponent<SpriteRenderer>().bounds.size.y*/, transform.position.z);
         }
 
 

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpawnPoint
+  - Piso
+  - Obstaculo
+  - Moneda
   layers:
   - Default
   - TransparentFX
