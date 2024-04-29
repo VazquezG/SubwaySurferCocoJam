@@ -9,6 +9,10 @@ public class PlayerMovementBF : MonoBehaviour
     Rigidbody2D rb;
     bool saltando, tropesando;
     public int monedas;
+    public AudioSource sourceCoin;
+    public AudioSource sourceHit;
+    public AudioClip SFXCoin;
+    public AudioClip[] SFXHit;
     void Start()
     {
         monedas = 0;
@@ -60,6 +64,8 @@ public class PlayerMovementBF : MonoBehaviour
         if(collision.tag == "Obstaculo" && !saltando)
         {
             ChecarMuerte();
+            int SFXRandom = Random.Range(0, 2);
+            sourceHit.PlayOneShot(SFXHit[SFXRandom]);
             Destroy(collision.gameObject);
             
         }
@@ -67,6 +73,7 @@ public class PlayerMovementBF : MonoBehaviour
         if(collision.tag == "Moneda")
         {
             monedas++;
+            sourceCoin.PlayOneShot(SFXCoin);
             Destroy(collision.gameObject);
         }
     }
