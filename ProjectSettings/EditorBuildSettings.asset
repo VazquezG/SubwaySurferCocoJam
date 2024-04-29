@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jorge.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/0_Main Menu.unity
+    guid: 1e7eb1a3552c6104ea908fd2c6e71f32
+  - enabled: 1
+    path: Assets/BuildFinal/EscenaBF.unity
+    guid: 5658da6bac2d8f444a0a12148d3d6396
   m_configObjects: {}

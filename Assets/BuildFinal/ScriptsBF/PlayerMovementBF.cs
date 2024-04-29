@@ -13,6 +13,9 @@ public class PlayerMovementBF : MonoBehaviour
     public AudioSource sourceHit;
     public AudioClip SFXCoin;
     public AudioClip[] SFXHit;
+
+    [Header("UI")]
+    public GameObject gameOver;
     void Start()
     {
         monedas = 0;
@@ -81,7 +84,10 @@ public class PlayerMovementBF : MonoBehaviour
     private void ChecarMuerte()
     {
         if (tropesando)
-        {
+        { 
+            Time.timeScale = 0;//stop the time
+            AudioListener.volume = 0f;//reactivate audio
+            gameOver.gameObject.SetActive(true);
             print("gameOver");
         }
         else
